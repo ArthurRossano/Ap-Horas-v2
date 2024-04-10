@@ -1,0 +1,109 @@
+.navbar-logo {
+    max-height: 60px; /* Defina o tamanho desejado para a logo */
+}
+
+body{
+    /* font-family: 'Arial Nova Cond', sans-serif !important; */
+    background-color: rgb(201, 201, 201) !important;
+} 
+
+h2{
+    font-size: 24px !important;
+}
+
+.container {
+    max-width: 800px; /* Definindo largura máxima do conteúdo */
+  }
+
+.dashboard-content {
+    text-align: center; /* Centralizando o conteúdo do dashboard */
+}
+
+#content-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Definindo altura total da janela de visualização */
+}
+
+.center-horas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh; /* Definindo altura total da janela de visualização */
+}
+
+#content-proj{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Definindo altura total da janela de visualização */
+}
+
+#content-dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Definindo altura total da janela de visualização */
+}
+
+.navcolor{
+    background-color: #80808062;
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
+.dark-border {
+    border-radius: 13px !important; /* Bordas arredondadas */
+} 
+
+.but-cust{
+    background-color: rgb(95, 95, 95) !important;
+    border-color: rgb(78, 78, 78) !important;
+    width: 150px !important;
+}
+
+input[type="submit"] {
+    background-color: #000000;
+    border-color: #000000;
+    color: #fff;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Adiciona uma transição suave para o efeito de hover */
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #7c7c7c;
+    border-color: #777777;
+}
+.table-responsive {
+    overflow-x: auto;
+}
+tbody{
+    font-size: 12px;
+}
+/* Estilo para a página atualmente selecionada */
+.red-pagination .page-item.active .page-link {
+    color: #fff;
+    background-color: #7c7c7c;
+    border-color: #777777;
+}
+
+/* Estilo para os links de página não selecionados */
+.red-pagination .page-item .page-link {
+    color: #070707;
+    background-color: #fff;
+    border-color: #777777;
+}
+
+/* Estilo para as setas de navegação */
+.red-pagination .page-item .page-link.prev-next-link {
+    color: #6c757d; /* Cinza para as setas */
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.dataTables_filter input {
+    background-color: #f5f5f5 !important; /* Define a cor de fundo da área de pesquisa */
+}
