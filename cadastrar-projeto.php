@@ -61,6 +61,8 @@
                                 <li><a class="dropdown-item text-center" href="cadastrar-projeto.php">Projetos</a></li>
                                 <li><a class="dropdown-item text-center" href="cadastrar-tipo.php">Tipo</a></li>
                                 <li><a class="dropdown-item text-center" href="cadastrar-atv.php">Atividade</a></li>
+                                <li><a class="dropdown-item text-center" href="cadastrar-comercial.php">Comercial</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -83,13 +85,14 @@
                             <form action="processa-projeto.php" method="POST" id="cadastroProjetoForm" class="mt-3">
                                 <div class="mb-3">
                                     <label for="nomeProjeto" class="form-label mb-0">Nome do Projeto</label>
-                                    <input type="text" id="nomeProjeto" name="nomeProjeto" class="form-control dark-border"
-                                        onkeyup="maiusc(this)" required>
+                                    <input type="text" id="nomeProjeto" name="nomeProjeto"
+                                        class="form-control dark-border" onkeyup="maiusc(this)" required>
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="tipoProjeto" class="form-label mb-0">Tipo do Projeto</label>
-                                    <select id="tipoProjeto" name="tipoProjeto" class="form-select dark-border" required>
+                                    <select id="tipoProjeto" name="tipoProjeto" class="form-select dark-border"
+                                        required>
                                         <option value="">Selecione um tipo</option>
                                         <option value="SW">Software</option>
                                         <option value="HW">Hardware</option>
@@ -99,7 +102,8 @@
 
                                 <div class="mb-3">
                                     <label for="clienteProjeto" class="form-label mb-0">Cliente do Projeto</label>
-                                    <select id="clienteProjeto" name="clienteProjeto" class="form-select dark-border" required>
+                                    <select id="clienteProjeto" name="clienteProjeto" class="form-select dark-border"
+                                        required>
                                         <option value="">Selecione um cliente</option>
                                         <?php 
                                     $query = $conexao->query("SELECT idclientes,cliente,representante FROM clientes ORDER BY idclientes ASC");
@@ -115,8 +119,8 @@
 
                                 <div class="mb-3">
                                     <label for="codigoProjeto" class="form-label mb-0">Código do Projeto</label>
-                                    <input type="text" id="codigoProjeto" name="codigoProjeto" class="form-control dark-border"
-                                        readonly>
+                                    <input type="text" id="codigoProjeto" name="codigoProjeto"
+                                        class="form-control dark-border" readonly>
                                 </div>
 
                                 <input type="submit" class="submit btn mt-1 btn-primary dark-border" value="CADASTRAR">

@@ -22,7 +22,7 @@
   }
   else{
     print "<script>alert('Tipo de Atendimento não preenchida')</script>";
-    print "<script>location.href='cadastrar-atv.php'</script>"; 
+    print "<script>location.href='cadastrar-tipo.php'</script>"; 
   }
   
 ?>

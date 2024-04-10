@@ -26,7 +26,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
   </script>
-  <title>Cadastrar Cliente</title>
+  <title>Cadastrar Comercial</title>
   <link rel="icon" href="img/logo1.png" type="image/png">
 </head>
 
@@ -74,14 +74,14 @@
 
     <div id="content-1" class="mt-4">
       <div class="container">
-        <div class="row justify-content-center mt-5"> 
+        <div class="row justify-content-center mt-5">
           <div class="col-md-4">
-            <h2 class="text-center mb-4">CADASTRAR ATIVIDADE</h2>
+            <h2 class="text-center mb-4">CADASTRAR COMERCIAL</h2>
             <section>
-              <form method="POST" action="processa-atv.php" id="cadastroAtvForm" class="mt-3">
+              <form method="POST" action="processa-comercial.php" id="cadastroComercialForm" class="mt-3">
                 <div class="mb-3">
-                  <label for="atv" class="form-label mb-0">Tipo Atividade</label>
-                  <input type="text" id="atv" name="atv" class="form-control dark-border" onkeyup="maiusc(this)">
+                  <label for="comercial" class="form-label mb-0">Nome do Comercial</label>
+                  <input type="text" id="comercial" name="comercial" class="form-control dark-border" onkeyup="maiusc(this)">
                 </div>
                 <input type="submit" value="CADASTRAR" name="submit" class="submit mt-1 btn btn-primary dark-border">
               </form>

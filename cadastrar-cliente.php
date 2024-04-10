@@ -59,6 +59,7 @@
                 <li><a class="dropdown-item text-center" href="cadastrar-projeto.php">Projetos</a></li>
                 <li><a class="dropdown-item text-center" href="cadastrar-tipo.php">Tipo</a></li>
                 <li><a class="dropdown-item text-center" href="cadastrar-atv.php">Atividade</a></li>
+                <li><a class="dropdown-item text-center" href="cadastrar-comercial.php">Comercial</a></li>
               </ul>
             </li>
           </ul>
@@ -80,12 +81,23 @@
               <form method="POST" action="processa-cliente.php" id="cadastroClienteForm" class="mt-3">
                 <div class="mb-3">
                   <label for="cliente" class="form-label mb-0">Nome do Cliente</label>
-                  <input type="text" id="cliente" name="cliente" class="form-control dark-border" onkeyup="maiusc(this)">
+                  <input type="text" id="cliente" name="cliente" class="form-control dark-border"
+                    onkeyup="maiusc(this)">
                 </div>
                 <div class="mb-3">
-                  <label for="representante" class="form-label mb-0">Representante Comercial</label>
-                  <input type="text" id="representante" name="representante" class="form-control dark-border"
-                    onkeyup="maiusc(this)">
+                  <label for="representante" class="form-label mb-0">Comercial</label>
+                  <select id="representante" name="representante" class="form-select dark-border" required>
+                    <option value="">Selecione o comercial</option>
+                    <?php 
+                      $query = $conexao->query("SELECT idcomercial,comercial FROM ncomercial ORDER BY idcomercial ASC");
+                      $registros = $query->fetch_all(PDO::FETCH_ASSOC);
+                      foreach($registros as $option){
+                    ?>
+                    <option value="<?php echo $option['1']?>"><?php echo $option['1']?></option>
+                    <?php 
+                      }
+                    ?>
+                  </select>
                 </div>
                 <input type="submit" value="CADASTRAR" name="submit" class="submit mt-1 btn btn-primary dark-border">
               </form>

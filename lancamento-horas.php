@@ -59,6 +59,8 @@
                                 <li><a class="dropdown-item text-center" href="cadastrar-projeto.php">Projetos</a></li>
                                 <li><a class="dropdown-item text-center" href="cadastrar-tipo.php">Tipo</a></li>
                                 <li><a class="dropdown-item text-center" href="cadastrar-atv.php">Atividade</a></li>
+                                <li><a class="dropdown-item text-center" href="cadastrar-comercial.php">Comercial</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -82,7 +84,8 @@
                                         <label for="usuario" class="form-label mb-0">Usuário</label>
                                         <input type="hidden" name="usuario"
                                             value="<?php $logado = mb_strtoupper("$logado",'UTF-8') ; echo "$logado"; ?>">
-                                        <div class="bold-text"><?php $logado = mb_strtoupper("$logado",'UTF-8') ; echo "$logado"; ?></div>
+                                        <div class="bold-text">
+                                            <?php $logado = mb_strtoupper("$logado",'UTF-8') ; echo "$logado"; ?></div>
                                     </div>
                                     <div class="col-md-6">
                                         <label for="projeto" class="form-label mb-0">Projeto</label>
@@ -129,26 +132,31 @@
                                 <div class="row mb-3">
                                     <div class="col-md-6">
                                         <label for="hIni" class="form-label mb-0">Hora de Início</label>
-                                        <input type="time" id="hIni" name="hIni" class="form-control dark-border" required>
+                                        <input type="time" id="hIni" name="hIni" class="form-control dark-border"
+                                            required>
                                     </div>
                                     <div class="col-md-6">
                                         <label for="hFim" class="form-label mb-0">Hora de Término</label>
-                                        <input type="time" id="hFim" name="hFim" class="form-control dark-border" required>
+                                        <input type="time" id="hFim" name="hFim" class="form-control dark-border"
+                                            required>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <div class="col-md-6">
                                         <label for="data" class="form-label mb-0">Data</label>
-                                        <input type="date" id="data" name="data" class="form-control dark-border" required>
+                                        <input type="date" id="data" name="data" class="form-control dark-border"
+                                            required>
                                     </div>
                                     <div class="col-md-6">
                                         <label for="totHoras" class="form-label mb-0">Total de Horas</label>
-                                        <input type="text" id="totHoras" name="totHoras" class="form-control dark-border" readonly>
+                                        <input type="text" id="totHoras" name="totHoras"
+                                            class="form-control dark-border" readonly>
                                     </div>
                                 </div>
                                 <div class="row justify-content-center">
                                     <div class="col-md-6">
-                                        <input type="submit" value="REGISTRAR" class="submit mt-1 btn btn-primary dark-border">
+                                        <input type="submit" value="REGISTRAR"
+                                            class="submit mt-1 btn btn-primary dark-border">
                                     </div>
                                 </div>
 
@@ -166,4 +174,3 @@
 </body>
 
 </html>
-

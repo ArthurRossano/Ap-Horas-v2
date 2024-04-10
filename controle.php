@@ -73,6 +73,8 @@
                                 <li><a class="dropdown-item text-center" href="cadastrar-projeto.php">Projetos</a></li>
                                 <li><a class="dropdown-item text-center" href="cadastrar-tipo.php">Tipo</a></li>
                                 <li><a class="dropdown-item text-center" href="cadastrar-atv.php">Atividade</a></li>
+                                <li><a class="dropdown-item text-center" href="cadastrar-comercial.php">Comercial</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -174,7 +176,7 @@
                     },
                     "paging": false,
                     "searching": false,
-                    "info":false
+                    "info": false
                 });
             });
         </script>
