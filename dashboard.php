@@ -32,7 +32,7 @@ $resultado = $conexao->query($sql);
   <link rel="icon" href="img/logo1.png" type="image/png">
 </head>
 
-<body class="dark-mode">
+<body>
   <div>
     <nav class="navbar navbar-expand-lg navcolor w-100">
       <div class="container-fluid">
@@ -73,6 +73,10 @@ $resultado = $conexao->query($sql);
         </div>
       </div>
     </nav>
+    <label class="mt-1 switch">
+      <input type="checkbox" id="switch">
+      <span class="slider"></span>
+    </label>
     <div id="content-dashboard">
       <div class="dashboard-content">
         <div class="dashboard-main">
@@ -104,10 +108,7 @@ $resultado = $conexao->query($sql);
       </div>
     </div>
   </div>
-  <label class="switch">
-    <input type="checkbox" id="switch">
-    <span class="slider"></span>
-  </label>
+
 
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
