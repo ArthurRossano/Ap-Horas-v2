@@ -22,6 +22,7 @@ $resultado = $conexao->query($sql);
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slider.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -31,12 +32,12 @@ $resultado = $conexao->query($sql);
   <link rel="icon" href="img/logo1.png" type="image/png">
 </head>
 
-<body>
+<body class="dark-mode">
   <div>
     <nav class="navbar navbar-expand-lg navcolor w-100">
       <div class="container-fluid">
         <a class="navbar-brand" href="dashboard.php">
-          <img src="img/logo.png" alt="Logo" class="navbar-logo">
+          <img src="logo.png" alt="Logo" class="navbar-logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -103,6 +104,14 @@ $resultado = $conexao->query($sql);
       </div>
     </div>
   </div>
+  <label class="switch">
+    <input type="checkbox" id="switch">
+    <span class="slider"></span>
+  </label>
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
