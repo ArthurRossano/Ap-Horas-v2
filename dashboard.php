@@ -37,7 +37,7 @@ $resultado = $conexao->query($sql);
     <nav class="navbar navbar-expand-lg navcolor w-100">
       <div class="container-fluid">
         <a class="navbar-brand" href="dashboard.php">
-          <img src="logo.png" alt="Logo" class="navbar-logo">
+          <img src="img/logo.png" alt="Logo" class="navbar-logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
