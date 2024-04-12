@@ -80,6 +80,11 @@
                         </li>
                     </ul>
                     <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <form action="download-csv.php" method="post">
+                                <input type="submit" class="btn btn-primary" value="BAIXAR CSV">
+                            </form>
+                        </li>
                         <li class="nav-item bold-text">
                             <a class="nav-link" href="sair.php">Sair</a>
                         </li>

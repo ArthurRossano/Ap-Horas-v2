@@ -4,6 +4,11 @@
     --nav-bg: #80808062;
     --nav-color: #000000A6;
     --logo: url('../img/logo.png');
+    --submit-btn-bg: #000000;
+    --submit-btn-border: #000000;
+    --submit-btn-bg-hover: #7c7c7c;
+    --submit-btn-border-hover: #777777;
+    
 }
 
 .light-mode:root{
@@ -12,6 +17,10 @@
     --nav-bg: #f8f9fa;
     --nav-color: #000000A6;
     --logo: url('../img/logo-light.png');
+    --submit-btn-bg: #f50c0c;
+    --submit-btn-border: #f50c0c;
+    --submit-btn-bg-hover: #f84a4a;
+    --submit-btn-border-hover: #f84a4a;
 }
 
 body{
@@ -86,16 +95,16 @@ h2{
 }
 
 input[type="submit"] {
-    background-color: #000000;
-    border-color: #000000;
-    color: #fff;
+    background-color: var(--submit-btn-bg);
+    border-color: var(--submit-btn-border);
+    color: #fff ;
     transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Adiciona uma transição suave para o efeito de hover */
     width: 100%;
 }
 
 input[type="submit"]:hover {
-    background-color: #7c7c7c;
-    border-color: #777777;
+    background-color: var(--submit-btn-bg-hover);
+    border-color: var(--submit-btn-border-hover);
 }
 .table-responsive {
     overflow-x: auto;
