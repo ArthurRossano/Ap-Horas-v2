@@ -21,7 +21,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/slider.css">
-  <script src="js/cadastro-projeto.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -31,7 +32,7 @@
   <link rel="icon" href="img/logo1.png" type="image/png">
 </head>
 
-<body>
+<body class="dark-mode">
   <div>
     <nav class="navbar navbar-expand-lg navcolor w-100">
       <div class="container-fluid">
@@ -93,11 +94,11 @@
                   <label for="representante" class="form-label mb-0">Comercial</label>
                   <select id="representante" name="representante" class="form-select dark-border" required>
                     <option value="">Selecione o comercial</option>
-                    <?php 
-                      $query = $conexao->query("SELECT idcomercial,comercial FROM ncomercial ORDER BY idcomercial ASC");
-                      $registros = $query->fetch_all(PDO::FETCH_ASSOC);
-                      foreach($registros as $option){
-                    ?>
+                      <?php 
+                        $query = $conexao->query("SELECT idcomercial,comercial FROM ncomercial ORDER BY idcomercial ASC");
+                        $registros = $query->fetch_all(PDO::FETCH_ASSOC);
+                        foreach($registros as $option){
+                      ?>
                     <option value="<?php echo $option['1']?>"><?php echo $option['1']?></option>
                     <?php 
                       }
@@ -112,8 +113,7 @@
       </div>
     </div>
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="js/script.js"></script>
+
 </body>
 
 </html>
